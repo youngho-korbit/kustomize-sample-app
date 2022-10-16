@@ -3,7 +3,9 @@ commonLabels:
   variant: production
 bases:
 - ../../base
-patchesStrategicMerge:
+resources:
 - namespace.yaml
+
+patchesStrategicMerge:
 - deployment.yaml
 - config-map.yaml

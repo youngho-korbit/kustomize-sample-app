@@ -3,6 +3,7 @@ commonLabels:
   variant: staging
 bases:
 - ../../base
+resources:
+- namespace.yaml
 patchesStrategicMerge:
 - config-map.yaml
-- namespace.yaml
