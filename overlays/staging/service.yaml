@@ -5,6 +5,5 @@ metadata:
   labels:
     app: demo
 spec:
-  selector:
-    app: demo
-  type: LoadBalancer
+  ports:
+    - port: 8080
