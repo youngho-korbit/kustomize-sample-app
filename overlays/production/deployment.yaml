@@ -4,3 +4,12 @@ metadata:
   name: the-deployment
 spec:
   replicas: 3
+  template:
+    metadata:
+      labels:
+        deployment: demo
+    spec:
+      containers:
+      - name: the-container
+        ports:
+        - containerPort: 9090
